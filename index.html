@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=favicon.ico><title></title><script>document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+			addEventListener('load', function() {
+				setTimeout(function() {
+					console.log('document.documentElement.clientWidth1', document.documentElement.clientWidth)
+					document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+					window.unit = 100 * document.documentElement.clientWidth / 750;
+					var e = document.createEvent('Event');
+					e.initEvent('adjustReady', true, true);
+					window.dispatchEvent(e);
+				}, 480);
+			});
+			addEventListener('orientationchange', function() {
+				setTimeout(function() {
+					console.log('document.documentElement.clientWidth2', document.documentElement.clientWidth)
+					document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px'
+				}, 480)
+			});</script><link href=css/chunk-146342b6.81705f5e.css rel=prefetch><link href=css/chunk-2345cee4.65b94d61.css rel=prefetch><link href=css/chunk-60c30dec.a103964f.css rel=prefetch><link href=css/chunk-6cbcb932.0e433876.css rel=prefetch><link href=css/chunk-732ce2ec.0e433876.css rel=prefetch><link href=css/chunk-88d8ec4e.91428c46.css rel=prefetch><link href=js/chunk-00e7d53e.d7e136d1.js rel=prefetch><link href=js/chunk-146342b6.b217ac13.js rel=prefetch><link href=js/chunk-2345cee4.7908bdeb.js rel=prefetch><link href=js/chunk-60c30dec.8df81d68.js rel=prefetch><link href=js/chunk-6cbcb932.2f55c92a.js rel=prefetch><link href=js/chunk-732ce2ec.bc6c003a.js rel=prefetch><link href=js/chunk-88d8ec4e.07f545ef.js rel=prefetch><link href=css/app.5ef27f0e.css rel=preload as=style><link href=css/chunk-vendors.3d7c6c8e.css rel=preload as=style><link href=js/app.7abc6e9e.js rel=preload as=script><link href=js/chunk-vendors.50ccc2da.js rel=preload as=script><link href=css/chunk-vendors.3d7c6c8e.css rel=stylesheet><link href=css/app.5ef27f0e.css rel=stylesheet></head><body><noscript><strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=js/chunk-vendors.50ccc2da.js></script><script src=js/app.7abc6e9e.js></script></body></html>
